@@ -76,7 +76,7 @@ Clases: 20
 
 Marca una opción.
 
-- [ ] No usé asistentes de IA en este examen.
+- [x] No usé asistentes de IA en este examen.
 - [ ] Sí usé asistentes de IA. Para cada uso: herramienta, qué le pedí, qué usé de su respuesta y qué revisé o cambié yo.
 
 consulté la documentación de SQLite para la parte 1. Específicamente para la parte de unique :) https://www.sqlite.org/search?s=d&q=integrity+error
