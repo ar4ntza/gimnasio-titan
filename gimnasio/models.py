@@ -34,7 +34,8 @@ class ClaseQuerySet(models.QuerySet):
     def con_lugar(self):
         """Clases en las que todavía se puede inscribir alguien."""
         return self.annotate(num_inscritos=Count("inscritos")).filter(
-            num_inscritos__lte=F("cupo")
+            estado=Clase.Estado.ACTIVA,
+            num_inscritos__lt=F("cupo"),
         )
 
 

@@ -50,6 +50,15 @@ Clases: 20
 
 **Commit:** ticket 1: corregir el nombre de 'clase_detalle' en 'clase_lista'
 
+## Falla: Ticket 2
+**Síntoma:** La página principal dice que hay 20 clases con lugares disponibles, y no puede ser
+
+**Causa raíz:** no tomabamos en cuenta el estado de la clase
+
+**Corrección:** agregarlo al filtro de queryset en models
+
+**Commit:** ticket 2: agregar el estado de la clase al queryset.
+
 
 ---
 
