@@ -59,6 +59,16 @@ Clases: 20
 
 **Commit:** ticket 2: agregar el estado de la clase al queryset.
 
+## Falla: Ticket 3
+**Síntoma:** En el buscador (`/clases/buscar/`) escribo 'yoga' y salen 39 resultados. Solo tenemos 4 clases de yoga
+
+**Causa raíz:** en views, no teníamos el distinct en la parte de búsqueda.
+
+**Corrección:** agregar .distinct() a la búsqueda
+
+**Verificación:** Salen los resultados correctos.
+
+**Commit:** ticket 3: agregar distinct() a la búsqueda en views.
 
 ---
 

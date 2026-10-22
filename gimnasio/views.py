@@ -32,6 +32,6 @@ def clase_buscar(request):
             Q(disciplina__nombre__icontains=q)
             | Q(instructor__icontains=q)
             | Q(inscritos__nombre__icontains=q)
-        ).select_related("disciplina")
+        ).select_related("disciplina").distinct()
     contexto = {"q": q, "clases": clases}
     return render(request, "gimnasio/clase_buscar.html", contexto)
