@@ -17,7 +17,7 @@
   <tbody>
     {% for clase in clases %}
     <tr>
-      <td><a href="{% url 'detalle_clase' clase.pk %}">{{ clase.codigo }}</a></td>
+      <td><a href="{% url 'clase_detalle' clase.pk %}">{{ clase.codigo }}</a></td>
       <td>{{ clase.disciplina }}</td>
       <td>{{ clase.get_dia_display }}</td>
       <td>{{ clase.hora|time:"H:i" }}</td>

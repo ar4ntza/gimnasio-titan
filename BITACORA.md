@@ -7,7 +7,7 @@ Copia el bloque de abajo una vez por cada falla que encuentres. Llénalo en el m
 
 ---
 
-## Falla N (Parte 1 / Ticket N / F1 / F2 / Extra)
+## Falla: Parte 1
 
 Parte 1: python manage.py migrate
 **Síntoma:** RuntimeError: Model class gimnasio.models.Disciplina doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
@@ -38,6 +38,18 @@ Socios: 40
 Clases: 20
 
 **Commit:** parte 1: migración inicial, aregar 'salas' al modelo, agrear 'gimnasio' a installed apps y modificar el modelo de disciplinas.
+
+## Falla: Ticket 1
+**Síntoma:** django.urls.exceptions.NoReverseMatch: Reverse for 'detalle_clase' not found. 'detalle_clase' is not a valid view function or pattern name.
+
+**Causa raíz:** en 'clase_lista' el url de 'clase_detalle' estaba mal escrito.
+
+**Corrección:** escribir el nombre correcto del archivo 'clase_detalle.html' en el archivo de clase lista
+
+**Corrección:** la página cargó correctamente
+
+**Commit:** ticket 1: corregir el nombre de 'clase_detalle' en 'clase_lista'
+
 
 ---
 
